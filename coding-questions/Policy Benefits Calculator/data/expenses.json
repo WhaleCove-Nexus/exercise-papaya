@@ -1,0 +1,22 @@
+[
+  { "expense_id": "EXP-001", "date": "2024-01-08", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 800,   "diagnosis": "Upper respiratory infection", "provider": "Bangkok Hospital" },
+  { "expense_id": "EXP-002", "date": "2024-01-15", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 1800,  "diagnosis": "Acute bronchitis", "provider": "Bangkok Hospital" },
+  { "expense_id": "EXP-003", "date": "2024-01-20", "benefit_type": "DENTAL",     "sub_benefit": "Dental Checkup", "amount": 1200, "diagnosis": "Routine checkup", "provider": "Smile Clinic" },
+  { "expense_id": "EXP-004", "date": "2024-02-01", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 2500,  "diagnosis": "Gastritis", "provider": "Bumrungrad" },
+  { "expense_id": "EXP-005", "date": "2024-02-10", "benefit_type": "INPATIENT",  "sub_benefit": "Surgery", "amount": 200000, "diagnosis": "Acute appendicitis", "provider": "Bangkok Hospital" },
+  { "expense_id": "EXP-006", "date": "2024-03-01", "benefit_type": "OUTPATIENT", "sub_benefit": "Physiotherapy", "amount": 2000, "diagnosis": "Lower back pain", "provider": "Phyathai" },
+  { "expense_id": "EXP-007", "date": "2024-03-10", "benefit_type": "MEDICATION", "sub_benefit": "Prescription", "amount": 900,   "diagnosis": "Post-appendectomy antibiotics", "provider": "Bangkok Hospital" },
+  { "expense_id": "EXP-008", "date": "2024-03-15", "benefit_type": "MATERNITY",  "sub_benefit": "Prenatal Checkup", "amount": 3000, "diagnosis": "Pregnancy week 12", "provider": "Samitivej" },
+  { "expense_id": "EXP-009", "date": "2024-04-05", "benefit_type": "DENTAL",     "sub_benefit": "Teeth Whitening", "amount": 3000, "diagnosis": "Cosmetic whitening", "provider": "Smile Clinic" },
+  { "expense_id": "EXP-010", "date": "2024-04-12", "benefit_type": "DENTAL",     "sub_benefit": "Filling", "amount": 2000, "diagnosis": "Cavity", "provider": "Smile Clinic" },
+  { "expense_id": "EXP-011", "date": "2024-04-20", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 2500, "diagnosis": "Migraine", "provider": "Bumrungrad" },
+  { "expense_id": "EXP-012", "date": "2024-05-03", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 2500, "diagnosis": "Sinusitis", "provider": "Bangkok Hospital" },
+  { "expense_id": "EXP-013", "date": "2024-05-18", "benefit_type": "VISION",     "sub_benefit": "Eye Exam + Glasses", "amount": 1800, "diagnosis": "Myopia", "provider": "Optic88" },
+  { "expense_id": "EXP-014", "date": "2024-06-02", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 2500, "diagnosis": "Allergic rhinitis", "provider": "Bumrungrad" },
+  { "expense_id": "EXP-015", "date": "2024-06-20", "benefit_type": "OUTPATIENT", "sub_benefit": "Physiotherapy", "amount": 2500, "diagnosis": "Shoulder strain", "provider": "Phyathai" },
+  { "expense_id": "EXP-016", "date": "2024-07-10", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 4000, "diagnosis": "Pneumonia follow-up + x-ray", "provider": "Bangkok Hospital" },
+  { "expense_id": "EXP-017", "date": "2024-07-25", "benefit_type": "OUTPATIENT", "sub_benefit": "Doctor Visit", "amount": 2500, "diagnosis": "Skin rash", "provider": "Bumrungrad" },
+  { "expense_id": "EXP-018", "date": "2024-08-05", "benefit_type": "MEDICATION", "sub_benefit": "Prescription", "amount": 1500, "diagnosis": "Cholesterol medication", "provider": "Pharmacia" },
+  { "expense_id": "EXP-019", "date": "2024-09-10", "benefit_type": "MEDICATION", "sub_benefit": "Prescription", "amount": 800,  "diagnosis": "Allergy medication", "provider": "Pharmacia" },
+  { "expense_id": "EXP-020", "date": "2024-10-15", "benefit_type": "MATERNITY",  "sub_benefit": "Prenatal Checkup", "amount": 5000, "diagnosis": "Pregnancy week 36", "provider": "Samitivej" }
+]

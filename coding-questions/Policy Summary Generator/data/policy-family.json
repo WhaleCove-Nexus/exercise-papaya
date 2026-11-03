@@ -1,0 +1,73 @@
+{
+  "policy_number": "POL-2025-US-00142",
+  "policyholder": {
+    "name": "Nguyen Family",
+    "type": "INDIVIDUAL"
+  },
+  "plan": {
+    "name": "Family Shield",
+    "tier": "Silver",
+    "effective_date": "2025-02-01",
+    "expiry_date": "2026-01-31",
+    "currency": "USD"
+  },
+  "members": {
+    "total": 4,
+    "employee": 1,
+    "dependent_spouse": 1,
+    "dependent_child": 2
+  },
+  "benefits": [
+    {
+      "type": "INPATIENT",
+      "annual_limit": 250000,
+      "sub_benefits": [
+        { "name": "Room & Board", "limit_per_day": 300, "max_days": 60 },
+        { "name": "ICU", "limit_per_day": 600, "max_days": 15 },
+        { "name": "Surgery", "limit_per_event": 50000 }
+      ]
+    },
+    {
+      "type": "OUTPATIENT",
+      "annual_limit": 5000,
+      "sub_benefits": [
+        { "name": "Doctor Visit", "limit_per_visit": 80 },
+        { "name": "Prescription", "limit_per_visit": 50 }
+      ]
+    },
+    {
+      "type": "EMERGENCY",
+      "annual_limit": 20000,
+      "sub_benefits": [
+        { "name": "ER Visit", "limit_per_event": 2500 },
+        { "name": "Ambulance", "limit_per_event": 800 }
+      ]
+    },
+    {
+      "type": "VISION",
+      "annual_limit": 800,
+      "waiting_period_days": 180,
+      "sub_benefits": [
+        { "name": "Eye Exam", "limit_per_year": 150 },
+        { "name": "Glasses / Lenses", "limit_per_year": 500 }
+      ]
+    }
+  ],
+  "exclusions": [
+    "Pre-existing conditions within first 6 months",
+    "Elective procedures without pre-authorization",
+    "Injuries while under the influence",
+    "Treatment received outside the United States"
+  ],
+  "copay": {
+    "inpatient": { "percentage": 0 },
+    "outpatient": { "percentage": 10 },
+    "emergency": { "fixed_per_visit": 100 },
+    "vision": { "percentage": 25 }
+  },
+  "network": {
+    "type": "OPEN_ACCESS",
+    "hospital_count": 120,
+    "countries": ["United States"]
+  }
+}

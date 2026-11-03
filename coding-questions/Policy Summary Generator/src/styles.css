@@ -1,0 +1,147 @@
+:root {
+  --ink: #1a2332;
+  --muted: #5b6779;
+  --line: #e3e8ef;
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --accent: #0b6e4f;
+  --warn-bg: #fff8eb;
+  --warn-ink: #8a5a00;
+  --warn-line: #f0d9a8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.topbar h1 { margin: 0; font-size: 1.4rem; }
+.subtitle { margin: 0.15rem 0 0; color: var(--muted); font-size: 0.9rem; }
+
+.controls { display: flex; gap: 0.75rem; align-items: end; flex-wrap: wrap; }
+.controls label { font-size: 0.8rem; color: var(--muted); display: flex; flex-direction: column; gap: 0.25rem; }
+select, button {
+  font: inherit;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  cursor: pointer;
+}
+button:hover { border-color: var(--accent); color: var(--accent); }
+
+.json-panel { margin: 1rem 2rem 0; }
+.json-panel textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+  padding: 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.json-actions { display: flex; gap: 0.75rem; align-items: center; margin-top: 0.5rem; }
+.json-error { color: #b3261e; font-size: 0.85rem; }
+
+main { max-width: 1080px; margin: 1.5rem auto; padding: 0 2rem; }
+
+.card, .quickref {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+h2 { margin: 0 0 0.9rem; font-size: 1.05rem; }
+h3 { margin: 0.4rem 0 0.6rem; font-size: 0.95rem; display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+.benefit { padding: 0.6rem 0; }
+.benefit + .benefit { border-top: 1px solid var(--line); }
+
+.kv { display: grid; grid-template-columns: 140px 1fr; gap: 0.4rem 1rem; margin: 0; font-size: 0.92rem; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; }
+
+.table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.table th { text-align: left; color: var(--muted); font-weight: 600; font-size: 0.8rem; padding: 0.3rem 0.5rem 0.3rem 0; }
+.table td { padding: 0.4rem 0.5rem 0.4rem 0; border-top: 1px solid var(--line); vertical-align: top; }
+.table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.chip {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  margin: 0.1rem 0.2rem 0.1rem 0;
+  border-radius: 999px;
+  background: #eef2f7;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.limit-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: #e9f5f0;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+}
+
+.warn-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--warn-ink);
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+}
+
+.warn-card { background: var(--warn-bg); border-color: var(--warn-line); }
+.exclusions { margin: 0; padding-left: 1.2rem; }
+.exclusions li { margin: 0.3rem 0; }
+
+.quickref { border-color: var(--accent); border-width: 1px 1px 1px 4px; }
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+}
+.quick-label { display: block; font-size: 0.78rem; color: var(--muted); }
+.quick-value { font-size: 1.15rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+
+.footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+@media print {
+  .topbar .controls, .json-panel, #print-btn { display: none; }
+  body { background: #fff; }
+  main { margin: 0; max-width: none; }
+  .card, .quickref { break-inside: avoid; }
+}

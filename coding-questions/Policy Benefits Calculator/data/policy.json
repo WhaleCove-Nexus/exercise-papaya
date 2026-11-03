@@ -1,0 +1,57 @@
+{
+  "policy_id": "POL-2024-9001",
+  "plan_name": "Papaya Health Plus",
+  "currency": "THB",
+  "coverage_start": "2024-01-01",
+  "coverage_end": "2024-12-31",
+  "benefits": {
+    "OUTPATIENT": {
+      "annual_limit": 15000,
+      "per_visit_limit": 3000,
+      "copay": { "type": "percent", "value": 20 },
+      "deductible": 2000,
+      "waiting_period_days": 0,
+      "sub_limits": {
+        "Doctor Visit": { "visit_count_limit": 6 },
+        "Physiotherapy": { "per_visit_amount": 1500 }
+      },
+      "exclusions": ["cosmetic"]
+    },
+    "INPATIENT": {
+      "annual_limit": 500000,
+      "per_visit_limit": null,
+      "copay": { "type": "percent", "value": 10 },
+      "deductible": 0,
+      "waiting_period_days": 0,
+      "sub_limits": {},
+      "exclusions": ["cosmetic", "experimental"]
+    },
+    "DENTAL": {
+      "annual_limit": 10000,
+      "per_visit_limit": 2000,
+      "copay": { "type": "fixed", "value": 300 },
+      "deductible": 0,
+      "waiting_period_days": 90,
+      "sub_limits": {},
+      "exclusions": ["whitening"]
+    },
+    "MATERNITY": {
+      "annual_limit": 50000,
+      "per_visit_limit": 8000,
+      "copay": { "type": "percent", "value": 0 },
+      "deductible": 0,
+      "waiting_period_days": 270,
+      "sub_limits": {},
+      "exclusions": []
+    },
+    "MEDICATION": {
+      "annual_limit": 2000,
+      "per_visit_limit": 1500,
+      "copay": { "type": "percent", "value": 0 },
+      "deductible": 0,
+      "waiting_period_days": 0,
+      "sub_limits": {},
+      "exclusions": []
+    }
+  }
+}

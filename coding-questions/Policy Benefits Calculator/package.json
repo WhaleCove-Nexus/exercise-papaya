@@ -1,0 +1,10 @@
+{
+  "name": "policy-benefits-calculator",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "run": "node src/run.js",
+    "test": "node --test \"tests/**/*.test.js\""
+  }
+}
